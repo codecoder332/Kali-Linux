@@ -1,0 +1,15 @@
+
+{
+  "name": "Kali Linux GUI",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Kali Desktop (noVNC)",
+      "onAutoForward": "notify"
+    }
+  }
+}
